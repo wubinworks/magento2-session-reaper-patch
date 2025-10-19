@@ -1,0 +1,61 @@
+name: 📝 General issue report
+description: Report non-security issue.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        *Please search to see if an issue already exists for the problem you encountered before submitting!*
+        
+        *Please also check logs, if any.*
+        
+        *Hint: Use the following commands to obtain the required version information.*
+        
+        ```bash
+        # Change to Magento installtion root directory first
+        cd <magento_root>
+        
+        # Get Magento version
+        php bin/magento --version
+        
+        # Get PHP version
+        php -v
+        ```
+  - type: input
+    id: magento-version
+    attributes:
+      label: Magento version(Required)
+      description: Use the command above to get the *FULL* version.
+      placeholder: ✓ 2.4.7-p1 ☓ 2.4
+    validations:
+      required: true
+  - type: input
+    id: php-version
+    attributes:
+      label: PHP version(Required)
+      description: Use the command above to get the *FULL* version.
+      placeholder: ✓ 8.3.26 ☓ 8
+    validations:
+      required: true
+  - type: textarea
+    id: issue-details
+    attributes:
+      label: Issue details(Required)
+      description: |
+        Input issue details.
+      placeholder: |
+        Issue details here
+    validations:
+      required: true
+  - type: textarea
+    id: logs-console-output
+    attributes:
+      label: Logs or console output(Optional)
+      description: |
+        Remember to remove or replace ***SENSITIVE*** information!!
+      render: Text
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: |
+        *Thanks for taking the time to fill out this issue report!*

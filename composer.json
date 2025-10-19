@@ -1,0 +1,44 @@
+{
+    "name": "wubinworks/module-session-reaper-patch",
+    "description": "Patch for CVE-2025-54236(a.k.a Session Reaper) which allows customer account takeover and RCE under certain conditions. This patch is actually a Magento 2 extension and universal compatible for Magento 2.3 & 2.4. If you cannot upgrade Magento or cannot apply the official hotfix, try this one.",
+    "keywords": [
+        "CVE-2025-54236",
+        "sessionreaper",
+        "session reaper",
+        "magento2",
+        "magento 2",
+        "session takeover",
+        "customer account takeover",
+        "RCE",
+        "vulnerability",
+        "security"
+    ],
+    "homepage": "https://www.wubinworks.com/session-reaper-patch.html",
+    "support": {
+        "issues": "https://github.com/wubinworks/magento2-session-reaper-patch/issues",
+        "chat": "https://www.wubinworks.com/contact"
+    },
+    "require": {
+        "php": ">=7.1",
+        "magento/magento2-base": "~2.3.0 || ~2.4.0"
+    },
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": "OSL-3.0",
+    "authors": [
+        {
+            "name": "Wubinworks",
+            "email": "extension@wubinworks.com",
+            "homepage": "https://www.wubinworks.com",
+            "role": "A Magento Specialized Company"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Wubinworks\\SessionReaperPatch\\": ""
+        }
+    }
+}
