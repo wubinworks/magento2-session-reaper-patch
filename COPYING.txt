@@ -1,4 +1,4 @@
-Copyright © 2016-present Wubinworks.
+Copyright © 2017-present Wubinworks.
 
 Each source file included in this distribution is licensed under OSL 3.0
 

@@ -58,6 +58,7 @@ class ServiceInputProcessor
         $type
     ) {
         if (!is_array($data)
+            || empty($data)
             || $this->typeProcessor->isTypeSimple($type)
             || $this->typeProcessor->isTypeAny($type)
         ) {
