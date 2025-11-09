@@ -26,6 +26,10 @@
 
 *No `preference` is used, so your Magento is still upgradable.*
 
+#### Behavior difference
+
+*The official fix still allows dangerous parameter to go to `Setter`s, this patch does not allow it.*
+
 ## Requirements
 
 Magento/Adobe Commerce 2.3 or 2.4
